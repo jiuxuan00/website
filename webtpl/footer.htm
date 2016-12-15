@@ -1,0 +1,66 @@
+<div class="bd mt20 nav_select">
+    <div class="nav_select_bg">
+        <dl class="select">
+            <dt>人大网站</dt>
+            <dd style="">
+                <ul>
+                    <li><a href="" target="_blank">中国人大</a></li>
+                    <li><a href="" target="_blank">人大新闻</a></li>
+                </ul>
+            </dd>
+        </dl>
+        <dl class="select">
+            <dt>市州人大网站</dt>
+            <dd style="">
+                <ul>
+                    <li><a href="http://www.yasrdw.gov.cn/" target="_blank">雅安人大</a></li>
+                    <li><a href="http://www.yasrdw.gov.cn/" target="_blank">雅安人大</a></li>
+                    <li><a href="http://www.yasrdw.gov.cn/" target="_blank">雅安人大</a></li>
+                </ul>
+            </dd>
+        </dl>
+        <dl class="select">
+            <dt>一府两院</dt>
+            <dd style="">
+                <ul>
+                    <li><a href="http://www.gov.cn/" target="_blank">中国政府网</a></li>
+                    <li><a href="http://www.gov.cn/" target="_blank">中国政府网</a></li>
+                    <li><a href="http://www.gov.cn/" target="_blank">中国政府网</a></li>
+                </ul>
+            </dd>
+        </dl>
+        <dl class="select">
+            <dt>友情链接</dt>
+            <dd style="">
+                <ul>
+                    <li><a href="http://www.legaldaily.com.cn/" target="_blank">法制网</a></li>
+                    <li><a href="http://www.legaldaily.com.cn/" target="_blank">法制网</a></li>
+                    <li><a href="http://www.legaldaily.com.cn/" target="_blank">法制网</a></li>
+                </ul>
+            </dd>
+        </dl>
+    </div>
+</div>
+<!--/End/-->
+<div class="bd footer" style="height:85px;">
+    <p style="margin-top:23px;"></p>
+    <span id="_ideConac"><img src="/templets/webtpl/images/red.png"></span>
+    <p>版权所有：内蒙古自治区省人大常委会办公厅</p>
+    <p>网站维护：内蒙古自治区省人大常委会办公厅信息中心</p>
+    <p>蜀ICP备11021803号</p>
+</div>
+<!--/End/-->
+<script src="{dede:global.cfg_templets_skin/}/js/jquery-2.0.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.slideBox.min.js"></script>
+<script>
+    $(function () {
+        var $channelName = $('#channel-name').html();
+        $('#nav-ul li').each(function () {
+            var $val = $(this).find('a').html().replace(/<[^>]+>/g,"");
+            if ($val == $channelName) {
+                $(this).addClass('active').siblings('li').removeClass('active');
+            }
+        });
+    });
+</script>
+<!--/End/-->

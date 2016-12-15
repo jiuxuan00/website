@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{dede:global.cfg_webname/}</title>
+    <meta name="description" content="{dede:global.cfg_description/}" />
+    <meta name="keywords" content="{dede:global.cfg_keywords/}" />
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/layouts.css" charset="utf-8">
+</head>
+<body>
+{dede:include filename="header.htm"/}
+<!-- /header -->
+
+<div class="container bd mt20">
+    <div class="hd">
+        <div class="aside">
+            <div class="box bor-top-f4" style="min-height:260px;">
+                <div class="title"><i class="icons icons-flag"></i>宪法</div>
+                <img style="position: absolute;top:50%;left:50%;margin-top:-63px;margin-left:-52px;z-index:2;"
+                     src="{dede:global.cfg_templets_skin/}/images/icon-xianfa.png" alt="">
+                <div class="asidebg"></div>
+            </div>
+            <!--//End-->
+            <div class="box bor-top-f4 mt20">
+                <div class="title"><i class="icons icons-flag"></i>常委会委员</div>
+                <ul class="name">
+                    {dede:arclist row="23" typeid="10" titlelen="52" orderby="pubdate"}
+                    <li><a href="[field:arcurl /]" target="_blank" title="[field:fulltitle /]"><i></i>[field:title /]</a></li>
+                     {/dede:arclist}
+                </ul>
+                <div class="asidebg"></div>
+            </div>
+        </div>
+        <!--//End---->
+        <div class="content">
+            <div class="part">
+                <div class="box">
+                    <div class="title icons"><i class="icons icons-flag"></i>焦点新闻</div>
+                    <div id="lunbo" class="slideBox">
+                        <ul class="items">
+                            <li class="active"><a href="" title="111111" target="_blank"><img src="{dede:global.cfg_templets_skin/}/upload/exp.jpg"></a>
+                            </li>
+                            <li class=""><a href="" title="22222" target="_blank"><img src="{dede:global.cfg_templets_skin/}/upload/exp.jpg"></a></li>
+                            <li class=""><a href="" title="3333" target="_blank"><img src="{dede:global.cfg_templets_skin/}/upload/exp.jpg"></a></li>
+                            <li class=""><a href="" title="4444" target="_blank"><img src="{dede:global.cfg_templets_skin/}/upload/exp.jpg"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--//End---->
+                <div class="box ml16">
+                    <div class="title icons sub"><i class="icons icons-flag"></i>工作动态 <a class="more" href="">-更多-</a>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            {dede:arclist row="8" typeid="2" titlelen="52" orderby="pubdate"}
+                            <li><a href="[field:arcurl /]" target="_blank" title="[field:fulltitle /]">[field:title /]</a></li>
+                             {/dede:arclist}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--//End-->
+            <div class="part mb20"><img style="width: 100%;float:left;" src="{dede:global.cfg_templets_skin/}/images/ban1.jpg" alt=""></div>
+            <!--//End---->
+            <div class="part">
+                <div class="box">
+                    <div class="title icons sub"><i class="icons icons-flag"></i>监督工作<a class="more" href="">-更多-</a>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            {dede:arclist row="8" typeid="3" titlelen="52" orderby="pubdate"}
+                            <li><a href="[field:arcurl /]" target="_blank" title="[field:fulltitle /]">[field:title /]</a></li>
+                             {/dede:arclist}
+                        </ul>
+                    </div>
+                </div>
+                <div class="box ml16">
+                    <div class="title icons sub"><i class="icons icons-flag"></i>代表工作<a class="more" href="">-更多-</a>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            {dede:arclist row="8" typeid="4" titlelen="52" orderby="pubdate"}
+                            <li><a href="[field:arcurl /]" target="_blank" title="[field:fulltitle /]">[field:title /]</a></li>
+                             {/dede:arclist}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--//End-->
+            <div class="part">
+                <div class="box">
+                    <div class="title icons sub"><i class="icons icons-flag"></i>选举任免<a class="more" href="">-更多-</a>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            {dede:arclist row="8" typeid="5" titlelen="52" orderby="pubdate"}
+                            <li><a href="[field:arcurl /]" target="_blank" title="[field:fulltitle /]">[field:title /]</a></li>
+                             {/dede:arclist}
+                        </ul>
+                    </div>
+                </div>
+                <div class="box ml16">
+                    <div class="title icons sub"><i class="icons icons-flag"></i>制度汇编<a class="more" href="">-更多-</a>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            {dede:arclist row="8" typeid="7" titlelen="52" orderby="pubdate"}
+                            <li><a href="[field:arcurl /]" target="_blank" title="[field:fulltitle /]">[field:title /]</a></li>
+                             {/dede:arclist}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--//End---->
+            <div class="part">
+                <div class="box">
+                    <div class="title icons sub"><i class="icons icons-flag"></i>人大知识<a class="more" href="">-更多-</a>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            {dede:arclist row="8" typeid="9" titlelen="52" orderby="pubdate"}
+                            <li><a href="[field:arcurl /]" target="_blank" title="[field:fulltitle /]">[field:title /]</a></li>
+                             {/dede:arclist}
+                        </ul>
+                    </div>
+                </div>
+                <div class="box ml16">
+                    <div class="title icons sub"><i class="icons icons-flag"></i>决议决定<a class="more" href="">-更多-</a>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            {dede:arclist row="8" typeid="6" titlelen="52" orderby="pubdate"}
+                            <li><a href="[field:arcurl /]" target="_blank" title="[field:fulltitle /]">[field:title /]</a></li>
+                             {/dede:arclist}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--//End---->
+        </div>
+        <!--//End--content-->
+        <div class="aside">
+            <div class="box bor-top-f4">
+                <div class="title"><i class="icons icons-horn"></i>通知公告</div>
+                <div class="notice">
+                    {dede:arclist row="5" typeid="6" titlelen="52" orderby="pubdate"}
+                    <a href="[field:arcurl /]" target="_blank" title="[field:fulltitle /]"><i></i>[field:title /]</a>
+                    <em class="line"></em>
+                     {/dede:arclist}
+                </div>
+            </div>
+            <!--//End-->
+            <div class="box mt20 bor-top-f4 leader">
+                <div class="title"></div>
+                <div class="info">
+                    <dl style="padding-bottom:15px;margin-bottom:10px;border-bottom: 1px solid #cecece">
+                        <dt><img src="{dede:global.cfg_templets_skin/}/images/user.jpg" alt=""></dt>
+                        <dd>
+                            <p>常委会主任</p>
+                            <p>崔学斌</p>
+                            <p>主任信箱</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>副主任：</dt>
+                        <dd>
+                            <span>刘士勇</span>
+                            <span>刘士勇</span>
+                            <span>刘士勇</span>
+                            <span>刘士勇</span>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>秘书长：</dt>
+                        <dd>
+                            <span>张洪雷</span>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <!--//End-->
+            <div class="box button">
+                <a href="" class="btn" title="意见收集"><img src="{dede:global.cfg_templets_skin/}/images/btn-email.jpg" alt=""></a>
+                <a href="" class="btn" title="代表风采"><img src="{dede:global.cfg_templets_skin/}/images/btn-daibiao.jpg" alt=""></a>
+                <a href="" class="btn" title="两学一做"><img src="{dede:global.cfg_templets_skin/}/images/btn-xue.jpg" alt=""></a>
+            </div>
+        </div>
+        <!--//ENd-->
+        <div class="wrap">
+            <div class="bd slide">
+                <div class="slide_t"><i></i> <span>图片新闻</span></div>
+                <div class="left arrow_left" id="leftBtn"></div>
+                <div class="right arrow_right" style="float: right" id="rightBtn"></div>
+                <div id="div1">
+                    <ul>
+                        <li><a href="" title="" target="_blank"><img src="{dede:global.cfg_templets_skin/}/upload/exp.jpg" width="130" height="84"></a>
+                        </li>
+                        <li><a href="" title="" target="_blank"><img src="{dede:global.cfg_templets_skin/}/upload/exp.jpg" width="130" height="84"></a>
+                        </li>
+                        <li><a href="" title="" target="_blank"><img src="{dede:global.cfg_templets_skin/}/upload/exp.jpg" width="130" height="84"></a>
+                        </li>
+                        <li><a href="" title="" target="_blank"><img src="{dede:global.cfg_templets_skin/}/upload/exp.jpg" width="130" height="84"></a>
+                        </li>
+                        <li><a href="" title="" target="_blank"><img src="{dede:global.cfg_templets_skin/}/upload/exp.jpg" width="130" height="84"></a>
+                        </li>
+                        <li><a href="" title="" target="_blank"><img src="{dede:global.cfg_templets_skin/}/upload/exp.jpg" width="130" height="84"></a>
+                        </li>
+                        <li><a href="" title="" target="_blank"><img src="{dede:global.cfg_templets_skin/}/upload/exp.jpg" width="130" height="84"></a>
+                        </li>
+                        <li><a href="" title="" target="_blank"><img src="{dede:global.cfg_templets_skin/}/upload/exp.jpg" width="130" height="84"></a>
+                        </li>
+                        <li><a href="" title="" target="_blank"><img src="{dede:global.cfg_templets_skin/}/upload/exp.jpg" width="130" height="84"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 图片新闻结束 -->
+            <div class="space"></div>
+        </div>
+    </div>
+</div>
+<!--//End-->
+
+
+{dede:include filename="footer.htm"/}
+<script>
+    (function () {
+        window.onload = function () {
+            var oDiv = document.getElementById('div1'),
+                    oUl = oDiv.getElementsByTagName('ul')[0],
+                    aLi = oUl.getElementsByTagName('li'),
+                    speed = -1;
+
+            oUl.innerHTML = oUl.innerHTML + oUl.innerHTML;
+            oUl.style.width = aLi[0].offsetWidth * aLi.length + 'px';
+
+            function right() {
+                if (oUl.offsetLeft < -oUl.offsetWidth / 2) {
+                    oUl.style.left = '0';
+                }
+                ;
+                if (oUl.offsetLeft > 0) {
+                    oUl.style.left = -oUl.offsetWidth / 2 + 'px';
+                }
+                ;
+                oUl.style.left = oUl.offsetLeft + speed + 'px';
+            }
+
+            var timer = setInterval(right, 30);
+
+            oDiv.onmouseover = function () {
+                clearInterval(timer);
+            }
+            oDiv.onmouseout = function () {
+                timer = setInterval(right, 30);
+            }
+            $("#leftBtn").click(function () {
+                speed = -1;
+            });
+            $("#rightBtn").click(function () {
+                speed = 1;
+            });
+        }
+    })();
+
+    (function () {
+        $(".select").each(function(){
+            var s=$(this);
+            var z=parseInt(s.css("z-index"));
+            var dt=$(this).children("dt");
+            var dd=$(this).children("dd");
+            var _show=function(){dd.slideDown(200);dt.addClass("cur");s.css("z-index",z+1);};   //展开效果
+            var _hide=function(){dd.slideUp(200);dt.removeClass("cur");s.css("z-index",z);};    //关闭效果
+            dt.click(function(){dd.is(":hidden")?_show():_hide();});
+            dd.find("a").click(function(){dt.html($(this).html());_hide();});     //选择效果（如需要传值，可自定义参数，在此处返回对应的“value”值 ）
+            $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hide():"";});
+        })
+    })();
+
+    jQuery(function ($) {
+        $('#lunbo').slideBox({
+            duration: 0.4,//滚动持续时间，单位：秒
+            easing: 'linear',//swing,linear//滚动特效
+            delay: 5,//滚动延迟时间，单位：秒
+            hideClickBar: false,//不自动隐藏点选按键
+            clickBarRadius: 10
+        });
+
+    });
+</script>
+
+
+</body>
+</html>
