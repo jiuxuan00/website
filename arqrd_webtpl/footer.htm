@@ -1,42 +1,40 @@
+<!--qq聊天代码部分begin-->
+<div class="izl-rmenu">
+    <a class="cart"><div class="pic"></div></a>
+    <a href="javascript:void(0)" class="btn_top" style="display: block;"></a>
+</div>
+<!--qq聊天代码部分end-->
+
 <div class="bd mt20 nav_select">
     <div class="nav_select_bg">
         <dl class="select">
-            <dt>人大网站</dt>
+            <dt>新闻媒体</dt>
             <dd style="">
-                <ul>
-                    <li><a href="" target="_blank">中国人大</a></li>
-                    <li><a href="" target="_blank">人大新闻</a></li>
-                </ul>
+                <a href="http://www.people.com.cn/" target="_blank">人民网</a>
+                <a href="http://www.xinhuanet.com/" target="_blank">新华网</a>
+                <a href="http://www.ifeng.com/" target="_blank">凤凰网</a>
+                <a href="http://www.nmrb.cn/" target="_blank">内蒙古广播网</a>
+                <a href="http://www.northnews.cn/" target="_blank">正北方网</a>
+                <a href="http://www.nmgnews.com.cn/" target="_blank">内蒙古新闻网</a>
             </dd>
         </dl>
         <dl class="select">
-            <dt>市州人大网站</dt>
+            <dt>区人大网</dt>
             <dd style="">
-                <ul>
-                    <li><a href="http://www.yasrdw.gov.cn/" target="_blank">雅安人大</a></li>
-                    <li><a href="http://www.yasrdw.gov.cn/" target="_blank">雅安人大</a></li>
-                    <li><a href="http://www.yasrdw.gov.cn/" target="_blank">雅安人大</a></li>
-                </ul>
+                <a href="http://www.nmgrd.gov.cn/" target="_blank">内蒙古人大网</a>
             </dd>
         </dl>
         <dl class="select">
-            <dt>一府两院</dt>
+            <dt>市人大网</dt>
             <dd style="">
-                <ul>
-                    <li><a href="http://www.gov.cn/" target="_blank">中国政府网</a></li>
-                    <li><a href="http://www.gov.cn/" target="_blank">中国政府网</a></li>
-                    <li><a href="http://www.gov.cn/" target="_blank">中国政府网</a></li>
-                </ul>
+                <a href="http://www.hlberd.gov.cn/" target="_blank">呼伦贝尔市人大网</a>
             </dd>
         </dl>
         <dl class="select">
-            <dt>友情链接</dt>
+            <dt>党政机关</dt>
             <dd style="">
-                <ul>
-                    <li><a href="http://www.legaldaily.com.cn/" target="_blank">法制网</a></li>
-                    <li><a href="http://www.legaldaily.com.cn/" target="_blank">法制网</a></li>
-                    <li><a href="http://www.legaldaily.com.cn/" target="_blank">法制网</a></li>
-                </ul>
+                <a href="http://www.arq.gov.cn/" target="_blank">阿荣旗人民政府</a>
+                <a href="http://www.arqdj.com/" target="_blank">阿荣旗党建网</a>
             </dd>
         </dl>
     </div>
@@ -45,22 +43,12 @@
 <div class="bd footer" style="height:85px;">
     <p style="margin-top:23px;"></p>
     <span id="_ideConac"><img src="/templets/webtpl/images/red.png"></span>
-    <p>版权所有：内蒙古自治区省人大常委会办公厅</p>
-    <p>网站维护：内蒙古自治区省人大常委会办公厅信息中心</p>
+    <p>版权所有：阿荣旗人民代表大会常务委员会办公室</p>
+    <p>网站维护：阿荣旗365信息网</p>
     <p>蜀ICP备11021803号</p>
 </div>
 <!--/End/-->
 <script src="{dede:global.cfg_templets_skin/}/js/jquery-2.0.min.js"></script>
 <script src="{dede:global.cfg_templets_skin/}/js/jquery.slideBox.min.js"></script>
-<script>
-    $(function () {
-        var $channelName = $('#channel-name').html();
-        $('#nav-ul li').each(function () {
-            var $val = $(this).find('a').html().replace(/<[^>]+>/g,"");
-            if ($val == $channelName) {
-                $(this).addClass('active').siblings('li').removeClass('active');
-            }
-        });
-    });
-</script>
+<script src="{dede:global.cfg_templets_skin/}/js/system.js"></script>
 <!--/End/-->

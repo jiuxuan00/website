@@ -5,7 +5,7 @@
     <title>{dede:global.cfg_webname/}</title>
     <meta name="description" content="{dede:global.cfg_description/}" />
     <meta name="keywords" content="{dede:global.cfg_keywords/}" />
-    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/layouts.css" charset="utf-8">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/layouts.css?t=2" charset="utf-8">
 </head>
 <body>
 {dede:include filename="header.htm"/}
@@ -13,42 +13,55 @@
 
 <div class="container bd mt20">
     <div class="hd">
-        <div class="aside">
+        <div class="aside" style="margin-bottom:20px">
             <div class="box bor-top-f4" style="min-height:260px;">
                 <div class="title"><i class="icons icons-flag"></i>宪法</div>
+                <a href="http://www.npc.gov.cn/npc/xinwen/node_505.htm" target="_blank" title="宪法">
                 <img style="position: absolute;top:50%;left:50%;margin-top:-63px;margin-left:-52px;z-index:2;"
-                     src="{dede:global.cfg_templets_skin/}/images/icon-xianfa.png" alt="">
+                     src="{dede:global.cfg_templets_skin/}/images/icon-xianfa.png" alt=""></a>
                 <div class="asidebg"></div>
             </div>
             <!--//End-->
             <div class="box bor-top-f4 mt20">
                 <div class="title"><i class="icons icons-flag"></i>常委会委员</div>
                 <ul class="name">
-                    {dede:arclist row="23" typeid="10" titlelen="52" orderby="pubdate"}
-                    <li><a href="[field:arcurl /]" target="_blank" title="[field:fulltitle /]"><i></i>[field:title /]</a></li>
-                     {/dede:arclist}
+        					<li><a href="#" target="_blank" title="齐秀廷"><i></i>齐秀廷</a></li>
+        					<li><a href="#" target="_blank" title="那玉芬"><i></i>那玉芬</a></li>
+        					<li><a href="#" target="_blank" title="初振坤"><i></i>初振坤</a></li>
+        					<li><a href="#" target="_blank" title="薄久波"><i></i>薄久波</a></li>
+        					<li><a href="#" target="_blank" title="程云虹"><i></i>程云虹</a></li>
+        					<li><a href="#" target="_blank" title="朱洪斌"><i></i>朱洪斌</a></li>
+        					<li><a href="#" target="_blank" title="夏龙文"><i></i>夏龙文</a></li>
+        					<li><a href="#" target="_blank" title="于宏伟"><i></i>于宏伟</a></li>
+        					<li><a href="#" target="_blank" title="平翠枝"><i></i>平翠枝</a></li>
+        					<li><a href="#" target="_blank" title="李   雷"><i></i>李   雷</a></li>
+        					<li><a href="#" target="_blank" title="吴东志"><i></i>吴东志</a></li>
+        					<li><a href="#" target="_blank" title="陈   丽"><i></i>陈   丽</a></li>
+        					<li><a href="#" target="_blank" title="林国华"><i></i>林国华</a></li>
+        					<li><a href="#" target="_blank" title="赵彦堂"><i></i>赵彦堂</a></li>
+        					<li><a href="#" target="_blank" title="侯占华"><i></i>侯占华</a></li>
+        					<li><a href="#" target="_blank" title="康志民"><i></i>康志民</a></li>
+        					<li><a href="#" target="_blank" title="程学新"><i></i>程学新</a></li>
                 </ul>
-                <div class="asidebg"></div>
+                <!-- <div class="asidebg"></div> -->
             </div>
         </div>
         <!--//End---->
         <div class="content">
             <div class="part">
                 <div class="box">
-                    <div class="title icons"><i class="icons icons-flag"></i>焦点新闻</div>
+                    <!-- <div class="title icons"><i class="icons icons-flag"></i>焦点新闻</div> -->
                     <div id="lunbo" class="slideBox">
                         <ul class="items">
-                            <li class="active"><a href="" title="111111" target="_blank"><img src="{dede:global.cfg_templets_skin/}/upload/exp.jpg"></a>
-                            </li>
-                            <li class=""><a href="" title="22222" target="_blank"><img src="{dede:global.cfg_templets_skin/}/upload/exp.jpg"></a></li>
-                            <li class=""><a href="" title="3333" target="_blank"><img src="{dede:global.cfg_templets_skin/}/upload/exp.jpg"></a></li>
-                            <li class=""><a href="" title="4444" target="_blank"><img src="{dede:global.cfg_templets_skin/}/upload/exp.jpg"></a></li>
+                            {dede:arclist row="5" typeid="1,2,3,4,5" titlelen="42" flag="f" orderby="id"}
+                            <li><a href="[field:arcurl /]" title="[field:fulltitle/]"><img src="[field:picname/]" alt="[field:fulltitle/]"></a></li>
+                            {/dede:arclist}
                         </ul>
                     </div>
                 </div>
                 <!--//End---->
                 <div class="box ml16">
-                    <div class="title icons sub"><i class="icons icons-flag"></i>工作动态 <a class="more" href="">-更多-</a>
+                    <div class="title titlebg icons sub"><span>工作动态</span><a class="more" href="/plus/list.php?tid=2">-更多-</a>
                     </div>
                     <div class="item">
                         <ul>
@@ -64,7 +77,7 @@
             <!--//End---->
             <div class="part">
                 <div class="box">
-                    <div class="title icons sub"><i class="icons icons-flag"></i>监督工作<a class="more" href="">-更多-</a>
+                    <div class="title titlebg icons sub"><span>监督工作</span><a class="more" href="/plus/list.php?tid=3">-更多-</a>
                     </div>
                     <div class="item">
                         <ul>
@@ -75,7 +88,7 @@
                     </div>
                 </div>
                 <div class="box ml16">
-                    <div class="title icons sub"><i class="icons icons-flag"></i>代表工作<a class="more" href="">-更多-</a>
+                    <div class="title titlebg icons sub"><span>代表工作</span><a class="more" href="/plus/list.php?tid=4">-更多-</a>
                     </div>
                     <div class="item">
                         <ul>
@@ -89,7 +102,7 @@
             <!--//End-->
             <div class="part">
                 <div class="box">
-                    <div class="title icons sub"><i class="icons icons-flag"></i>选举任免<a class="more" href="">-更多-</a>
+                    <div class="title titlebg icons sub"><span>人事任免</span><a class="more" href="/plus/list.php?tid=5">-更多-</a>
                     </div>
                     <div class="item">
                         <ul>
@@ -100,7 +113,7 @@
                     </div>
                 </div>
                 <div class="box ml16">
-                    <div class="title icons sub"><i class="icons icons-flag"></i>制度汇编<a class="more" href="">-更多-</a>
+                    <div class="title titlebg icons sub"><span>制度汇编</span><a class="more" href="/plus/list.php?tid=7">-更多-</a>
                     </div>
                     <div class="item">
                         <ul>
@@ -114,7 +127,7 @@
             <!--//End---->
             <div class="part">
                 <div class="box">
-                    <div class="title icons sub"><i class="icons icons-flag"></i>人大知识<a class="more" href="">-更多-</a>
+                    <div class="title titlebg icons sub"><span>人大知识</span><a class="more" href="/plus/list.php?tid=9">-更多-</a>
                     </div>
                     <div class="item">
                         <ul>
@@ -125,7 +138,7 @@
                     </div>
                 </div>
                 <div class="box ml16">
-                    <div class="title icons sub"><i class="icons icons-flag"></i>决议决定<a class="more" href="">-更多-</a>
+                    <div class="title titlebg icons sub"><span>决议决定</span><a class="more" href="/plus/list.php?tid=6">-更多-</a>
                     </div>
                     <div class="item">
                         <ul>
@@ -153,28 +166,48 @@
             <div class="box mt20 bor-top-f4 leader">
                 <div class="title"></div>
                 <div class="info">
+                    <a href="/a/rendajianjie/20161226/47.html" target="_black">
                     <dl style="padding-bottom:15px;margin-bottom:10px;border-bottom: 1px solid #cecece">
-                        <dt><img src="{dede:global.cfg_templets_skin/}/images/user.jpg" alt=""></dt>
+                        <dt><img src="/templets/webtpl/images/SGH.jpg" alt=""></dt>
+
                         <dd>
                             <p>常委会主任</p>
-                            <p>崔学斌</p>
-                            <p>主任信箱</p>
+                            <br>
+                            <p>孙桂华</p>
                         </dd>
                     </dl>
-                    <dl>
-                        <dt>副主任：</dt>
+                    </a>
+                    <a href="/a/rendajianjie/20161226/48.html" target="_black">
+                    <dl style="padding-bottom:15px;margin-bottom:10px;border-bottom: 1px solid #cecece">
+                        <dt><img src="/templets/webtpl/images/whb.jpg" alt=""></dt>
                         <dd>
-                            <span>刘士勇</span>
-                            <span>刘士勇</span>
-                            <span>刘士勇</span>
-                            <span>刘士勇</span>
+                            <p>常委会副主任</p>
+                            <br>
+                            <p>王洪波</p>
                         </dd>
                     </dl>
-                    <dl>
-                        <dt>秘书长：</dt>
+                    </a>
+                    <a href="/a/rendajianjie/20161226/49.html" target="_black">
+                    <dl style="padding-bottom:15px;margin-bottom:10px;border-bottom: 1px solid #cecece">
+                        <dt><img src="/templets/webtpl/images/lyp.jpg" alt=""></dt>
                         <dd>
-                            <span>张洪雷</span>
+                            <p>常委会副主任</p>
+                            <br>
+                            <p>吕运平</p>
                         </dd>
+                    </dl>
+                    </a>
+                    <a href="/a/rendajianjie/20161226/50.html" target="_black">
+                    <dl style="padding-bottom:15px;margin-bottom:10px;border-bottom: 1px solid #cecece">
+                        <dt><img src="/templets/webtpl/images/gsx.jpg" alt=""></dt>
+                        <dd>
+                            <p>常委会副主任</p>
+                            <br>
+                            <p>谷淑湘</p>
+                        </dd>
+                    </dl>
+                    </a>
+                    <dl>
                     </dl>
                 </div>
             </div>
@@ -183,6 +216,35 @@
                 <a href="" class="btn" title="意见收集"><img src="{dede:global.cfg_templets_skin/}/images/btn-email.jpg" alt=""></a>
                 <a href="" class="btn" title="代表风采"><img src="{dede:global.cfg_templets_skin/}/images/btn-daibiao.jpg" alt=""></a>
                 <a href="" class="btn" title="两学一做"><img src="{dede:global.cfg_templets_skin/}/images/btn-xue.jpg" alt=""></a>
+            </div>
+            <div class="box bor-top-f4">
+                <div class="title"><i class="icons icons-flag"></i>基层人大</div>
+                <div class="notice">
+                    <a href="#"><i></i>那吉镇人大</a>
+                    <em class="line"></em>
+                    <a href="#"><i></i>亚东镇人大</a>
+                    <em class="line"></em>
+                    <a href="#"><i></i>霍尔奇镇人大</a>
+                    <em class="line"></em>
+                    <a href="#"><i></i>六合镇人大</a>
+                    <em class="line"></em>
+                    <a href="#"><i></i>向阳峪镇人大</a>
+                    <em class="line"></em>
+                    <a href="#"><i></i>复兴镇人大</a>
+                    <em class="line"></em>
+                    <a href="#"><i></i>三岔河镇人大</a>
+                    <em class="line"></em>
+                    <a href="#"><i></i>兴安镇人大</a>
+                    <em class="line"></em>
+                    <a href="#"><i></i>新发乡人大</a>
+                    <em class="line"></em>
+                    <a href="#"><i></i>巴奇乡人大</a>
+                    <em class="line"></em>
+                    <a href="#"><i></i>得力其尔乡人大</a>
+                    <em class="line"></em>
+                    <a href="#"><i></i>音河乡人大</a>
+                    <em class="line"></em>
+                </div>
             </div>
         </div>
         <!--//ENd-->
@@ -193,24 +255,14 @@
                 <div class="right arrow_right" style="float: right" id="rightBtn"></div>
                 <div id="div1">
                     <ul>
-                        <li><a href="" title="" target="_blank"><img src="{dede:global.cfg_templets_skin/}/upload/exp.jpg" width="130" height="84"></a>
+                        {dede:arclist row="9" typeid="1,2,3,4,5" titlelen="42" flag="f" orderby="id"}
+                        <li><a href="[field:arcurl /]" title="[field:fulltitle/]" target="_blank"><img src="[field:picname/]" [field:fulltitle/] width="130" height="84"></a>
                         </li>
-                        <li><a href="" title="" target="_blank"><img src="{dede:global.cfg_templets_skin/}/upload/exp.jpg" width="130" height="84"></a>
+                        {/dede:arclist}
+                        {dede:arclist row="9" typeid="1,2,3,4,5" titlelen="42" flag="f" orderby="id"}
+                        <li><a href="[field:arcurl /]" title="[field:fulltitle/]" target="_blank"><img src="[field:picname/]" [field:fulltitle/] width="130" height="84"></a>
                         </li>
-                        <li><a href="" title="" target="_blank"><img src="{dede:global.cfg_templets_skin/}/upload/exp.jpg" width="130" height="84"></a>
-                        </li>
-                        <li><a href="" title="" target="_blank"><img src="{dede:global.cfg_templets_skin/}/upload/exp.jpg" width="130" height="84"></a>
-                        </li>
-                        <li><a href="" title="" target="_blank"><img src="{dede:global.cfg_templets_skin/}/upload/exp.jpg" width="130" height="84"></a>
-                        </li>
-                        <li><a href="" title="" target="_blank"><img src="{dede:global.cfg_templets_skin/}/upload/exp.jpg" width="130" height="84"></a>
-                        </li>
-                        <li><a href="" title="" target="_blank"><img src="{dede:global.cfg_templets_skin/}/upload/exp.jpg" width="130" height="84"></a>
-                        </li>
-                        <li><a href="" title="" target="_blank"><img src="{dede:global.cfg_templets_skin/}/upload/exp.jpg" width="130" height="84"></a>
-                        </li>
-                        <li><a href="" title="" target="_blank"><img src="{dede:global.cfg_templets_skin/}/upload/exp.jpg" width="130" height="84"></a>
-                        </li>
+                        {/dede:arclist}
                     </ul>
                 </div>
             </div>
@@ -221,74 +273,7 @@
 </div>
 <!--//End-->
 
-
 {dede:include filename="footer.htm"/}
-<script>
-    (function () {
-        window.onload = function () {
-            var oDiv = document.getElementById('div1'),
-                    oUl = oDiv.getElementsByTagName('ul')[0],
-                    aLi = oUl.getElementsByTagName('li'),
-                    speed = -1;
-
-            oUl.innerHTML = oUl.innerHTML + oUl.innerHTML;
-            oUl.style.width = aLi[0].offsetWidth * aLi.length + 'px';
-
-            function right() {
-                if (oUl.offsetLeft < -oUl.offsetWidth / 2) {
-                    oUl.style.left = '0';
-                }
-                ;
-                if (oUl.offsetLeft > 0) {
-                    oUl.style.left = -oUl.offsetWidth / 2 + 'px';
-                }
-                ;
-                oUl.style.left = oUl.offsetLeft + speed + 'px';
-            }
-
-            var timer = setInterval(right, 30);
-
-            oDiv.onmouseover = function () {
-                clearInterval(timer);
-            }
-            oDiv.onmouseout = function () {
-                timer = setInterval(right, 30);
-            }
-            $("#leftBtn").click(function () {
-                speed = -1;
-            });
-            $("#rightBtn").click(function () {
-                speed = 1;
-            });
-        }
-    })();
-
-    (function () {
-        $(".select").each(function(){
-            var s=$(this);
-            var z=parseInt(s.css("z-index"));
-            var dt=$(this).children("dt");
-            var dd=$(this).children("dd");
-            var _show=function(){dd.slideDown(200);dt.addClass("cur");s.css("z-index",z+1);};   //展开效果
-            var _hide=function(){dd.slideUp(200);dt.removeClass("cur");s.css("z-index",z);};    //关闭效果
-            dt.click(function(){dd.is(":hidden")?_show():_hide();});
-            dd.find("a").click(function(){dt.html($(this).html());_hide();});     //选择效果（如需要传值，可自定义参数，在此处返回对应的“value”值 ）
-            $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hide():"";});
-        })
-    })();
-
-    jQuery(function ($) {
-        $('#lunbo').slideBox({
-            duration: 0.4,//滚动持续时间，单位：秒
-            easing: 'linear',//swing,linear//滚动特效
-            delay: 5,//滚动延迟时间，单位：秒
-            hideClickBar: false,//不自动隐藏点选按键
-            clickBarRadius: 10
-        });
-
-    });
-</script>
-
 
 </body>
 </html>
